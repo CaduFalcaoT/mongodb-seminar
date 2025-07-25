@@ -39,19 +39,25 @@ cd nome-do-repositorio
 2\. Inicie o ambiente do banco de dados:  
 Este comando utiliza o Docker Compose para iniciar um contêiner com o MongoDB e outro com o Mongo Express (uma interface gráfica para o banco).
 
+```
 docker-compose up \-d
+```
 
 - O banco de dados estará acessível em mongodb://localhost:27017.
 - A interface Mongo Express estará disponível em http://localhost:8081.
 
 **3\. Instale as dependências do projeto:**
 
+```
 npm install
+```
 
 4\. Povoamento do Banco de Dados (Opcional, mas recomendado):  
 Execute o script abaixo para popular o banco de dados com dados de exemplo (autores e posts).
 
+```
 npm run populate
+```
 
 _Você pode verificar se os dados foram inseridos corretamente através do Mongo Express._
 
@@ -59,7 +65,9 @@ _Você pode verificar se os dados foram inseridos corretamente através do Mongo
 
 Para iniciar o servidor da API, execute o seguinte comando:
 
+```
 npm start
+```
 
 O servidor estará rodando em http://localhost:3000.
 
@@ -73,12 +81,13 @@ Nesta página, você pode visualizar todos os endpoints disponíveis, seus parâ
 
 ## **📁 Estrutura do Projeto**
 
-.  
-├── app/  
-│ ├── app.js \# Configuração do servidor Express e Swagger  
-│ ├── models.js \# Definição dos Schemas e Models do Mongoose  
-│ ├── populate.js \# Script para povoar o banco de dados  
-│ └── routes.js \# Lógica das rotas da API  
-├── docker-compose.yml \# Arquivo de configuração da infraestrutura Docker  
-├── package.json \# Dependências e scripts do projeto  
+```
+├── app/
+│ ├── app.js \# Configuração do servidor Express e Swagger
+│ ├── models.js \# Definição dos Schemas e Models do Mongoose
+│ ├── populate.js \# Script para povoar o banco de dados
+│ └── routes.js \# Lógica das rotas da API
+├── docker-compose.yml \# Arquivo de configuração da infraestrutura Docker
+├── package.json \# Dependências e scripts do projeto
 └── README.md \# Este arquivo
+```

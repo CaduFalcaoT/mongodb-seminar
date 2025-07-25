@@ -2,11 +2,11 @@
   "name": "mongodb-seminar",
   "version": "1.0.0",
   "description": "API REST com MongoDB e Mongoose para apresentação de seminário.",
-  "main": "02-api/app.js",
+  "main": "app/app.js",
   "type": "module",
   "scripts": {
-    "start": "node 02-api/app.js",
-    "populate": "node 01-povoamento/populate.js"
+    "start": "node app/app.js",
+    "populate": "node app/populate.js"
   },
   "repository": {
     "type": "git",

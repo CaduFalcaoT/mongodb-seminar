@@ -4,7 +4,7 @@
 // que tudo esteja correto. Assim não precisamos validar manualmente, evitando código repetitivo, verboso e em baixo nível"
 
 import mongoose from "mongoose";
-import { Autor, Post } from "../02-api/models.js"; // Importa os models
+import { Autor, Post } from "./models.js"; // Importa os models
 
 const uri = "mongodb://admin:pass@localhost:27017/blog_api_db?authSource=admin";
 

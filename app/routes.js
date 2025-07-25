@@ -1,5 +1,5 @@
 // "Aqui está a mágica do Mongoose. O código de rotas ficou muito mais limpo e
-// legível comporaro ao método tradicional. Onde teriamos um '$lookup' complexo, agora temos um simples
+// legível comparado ao método tradicional. Onde teríamos um '$lookup' complexo, agora temos um simples
 // '.populate()'. As buscas por ID e atualizações também são mais diretas."
 
 import { Router } from "express";
@@ -51,6 +51,8 @@ router.get("/posts", async (req, res) => {
  * responses:
  * 200:
  * description: O documento do post.
+ * 404:
+ * description: Post não encontrado.
  */
 router.get("/posts/:id", async (req, res) => {
   try {
@@ -95,9 +97,14 @@ router.get("/posts/:id", async (req, res) => {
  * type: string
  * texto:
  * type: string
+ * example:
+ * usuario: "Novo Leitor"
+ * texto: "Que post incrível!"
  * responses:
  * 200:
  * description: O post atualizado com o novo comentário.
+ * 404:
+ * description: Post não encontrado.
  */
 router.post("/posts/:id/comments", async (req, res) => {
   try {

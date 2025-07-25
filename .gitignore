@@ -1,0 +1,54 @@
+# node_modules - dependências do projeto
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios de build
+dist/
+build/
+
+# Ambiente
+.env
+.env.*.local
+
+# IDEs e editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.swp
+
+# Test coverage
+coverage/
+
+# Arquivos do PM2 (caso use)
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Arquivos de cache do Node
+.cache/
+.next/       # caso use Next.js
+out/         # caso use Vercel static export
+
+# Arquivos gerados por pacotes específicos
+*.tgz
+*.tsbuildinfo
+
+# Arquivos de uploads temporários
+uploads/

@@ -1,0 +1,29 @@
+{
+  "name": "mongodb-seminar",
+  "version": "1.0.0",
+  "description": "API REST com MongoDB e Mongoose para apresentação de seminário.",
+  "main": "02-api/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node 02-api/app.js",
+    "populate": "node 01-povoamento/populate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaduFalcaoT/mongodb-seminar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaduFalcaoT/mongodb-seminar/issues"
+  },
+  "homepage": "https://github.com/CaduFalcaoT/mongodb-seminar#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

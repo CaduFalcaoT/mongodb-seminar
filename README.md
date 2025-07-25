@@ -4,7 +4,7 @@ Este repositório demonstra a construção de uma API REST usando MongoDB com a 
 
 ## **Roteiro de Apresentação ao Vivo**
 
-### **1\. Preparando o Ambiente (2 minutos)**
+### **1\. Preparando o Ambiente**
 
 **O que mostrar:** O arquivo docker-compose.yml na raiz do projeto.
 
@@ -16,7 +16,7 @@ docker-compose up \-d
 
 _Após executar, abra http://localhost:8081 no navegador para mostrar o Mongo Express, a interface gráfica do nosso banco._
 
-### **2\. Povoando o Banco com Mongoose (5 minutos)**
+### **2\. Povoando o Banco com Mongoose**
 
 **O que mostrar:** Os arquivos app/models.js e app/populate.js.
 
@@ -29,7 +29,7 @@ npm run populate
 
 _Após executar, atualize o Mongo Express e mostre as coleções autores e posts que foram criadas no banco blog_api_db._
 
-### **3\. Explorando a API com Mongoose (13 minutos)**
+### **3\. Explorando a API com Mongoose**
 
 **O que mostrar:** Os arquivos app/app.js, app/routes.js e a interface do Swagger.
 
